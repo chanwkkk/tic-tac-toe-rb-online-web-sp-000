@@ -108,8 +108,8 @@ def position_taken?(board, index)
 end
 
 def play(board)
-  until over?(board)
-    turn(board)
+  turn(board) until over?(board)
+    
 
   if won?(board)
     puts "Congratulations #{winner(board)}!"
